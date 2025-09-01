@@ -8,38 +8,48 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
+    <div class="container">
     <header>
-      <h1>Welcome to the Nature Poem Generator for Children</h1>
+      <h1>Welcome to the AI Nature Poem Generator for Children</h1>
     </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem. Example: rain, trees, flowers, animals, etc."
-        />
-        <input type="submit" />
-      </form>
-      <br />
-      <br />
-      <br />
-      <div id="poem">
-        <p>Rainy Day</p>
-        <p>I put on my coat</p>
-        <p>And boots on my feet.</p>
-        <p>I put on my hat</p>
-        <p>And stroll down the street.</p>
-        <br />
-        <p>The rain falls down</p>
-        <p>From the clouds above.</p>
-        <p>Splashing in puddles</p>
-        <p>Is what I love!</p>
-        <br />
-        <p>by Claire Louise Milne</p>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter a topic of the poem. Example: rain, trees, flowers, animals, etc."
+            autofocus
+            required
+            autocomplete="off"
+            class="topic"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
         <br />
         <br />
         <br />
-      </div>
-    </main>
+        <div class="poem">
+          Rainy Day
+          <br />
+          I put on my coat
+          <br />
+          And boots on my feet.
+          <br />
+          I put on my hat
+          <br />
+          And stroll down the street.
+          <br />
+          <br />
+          The rain falls down
+          <br />
+          From the clouds above.
+          <br />
+          Splashing in puddles Is what I love!
+          <br />
+          <br />
+          by Claire Louise Milne
+        </div>
+      </main>
+    </div>
     <script src="src/index.js"></script>
   </body>
   <footer>
@@ -55,6 +65,7 @@
       href="https://ainaturepoemgeneratorforchildren.netlify.app/"
       target="_blank"
       >Netlify</a
-    >.
+    >
   </footer>
+</div>
 </html>
