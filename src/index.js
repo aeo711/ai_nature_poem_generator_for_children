@@ -12,10 +12,9 @@ function generatePoem(event) {
 
   let topicInput = document.querySelector("user-topic");
   let apiKey = "68a00b103e53ctc365f3574aeo9c2492";
-  let prompt = `Generate a children's nature poem about ${topicInput}`;
+  let prompt = `Generate a poem about ${topicInput}`;
   let context =
-    "You are a children's poem expert and love to write short poems. Your mission is to generate a 4 line poem for children. Format the poem with a HTML strucutre, example: <p></p>. Also please add a title to the poem. Make sure the subject of the poem is the user-topic. Sign the poem with 'SheCodes AI' inside of a <strong></strong> element at the end.";
-  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+    "You are an expert at writing poems. Your mission is to generate a 4 line poem. The subject of the poem will come from '${topicInput}' Please sign the bottom 'SheCodes AI'. Please use HTML to format the poem, example: <p></p>.";
 
   let poemElement = document.querySelector("#poem");
   poemElement.classList.remove("hidden");

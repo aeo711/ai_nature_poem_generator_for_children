@@ -1,10 +1,18 @@
 body {
-  background-color: lightgreen;
+  background-color: #2bce4c;
   font-family: Arial, Helvetica, sans-serif;
 }
 a {
-  color: #885df1;
+  color: lemonchiffon;
+  font-weight: bold;
+  text-decoration: none;
 }
+a:hover {
+  color: lightslategray;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 h1 {
   font-weight: 800;
   font-size: 36px;
@@ -44,7 +52,7 @@ form {
 }
 .submit-button {
   margin-bottom: 10px;
-  background: rgb(6, 177, 244);
+  background: #1eafdb;
   color: white;
   border: none;
   width: 150px;
@@ -58,7 +66,7 @@ form {
 }
 .poem {
   background: lemonchiffon;
-  height: 400px;
+  height: 300px;
   padding: 20px;
   font-size: 14px;
   border-left: 3px solid rgb(6, 177, 244);
