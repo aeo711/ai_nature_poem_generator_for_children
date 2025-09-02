@@ -4,7 +4,7 @@
     <title>AI Nature Poem Generator for Children</title>
     <meta charset="UTF-8" />
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
@@ -21,6 +21,7 @@
             required
             autocomplete="off"
             class="topic"
+            id="user-topic"
           />
           <input type="submit" class="submit-button" />
         </form>
@@ -28,10 +29,8 @@
         <br />
         <br />
         <div class="poem" id="poem">
-          
         </div>
       </main>
-    </div>
     <script src="src/index.js"></script>
   </body>
   <footer>
