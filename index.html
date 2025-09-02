@@ -13,10 +13,11 @@
       <h1>Welcome to the AI Nature Poem Generator for Children</h1>
     </header>
       <main>
+        <div class="form-container">   
         <form id="poem-generator-form">
           <input
             type="text"
-            placeholder="Enter a topic of the poem. Example: rain, trees, flowers, animals, etc."
+            placeholder="Enter a nature topic."
             autofocus
             required
             autocomplete="off"
@@ -25,10 +26,12 @@
           />
           <input type="submit" class="submit-button" />
         </form>
+        <div class="hints">Ex: Rain, Rose, Rabbits</div>
+        </div>
         <br />
         <br />
         <br />
-        <div class="poem" id="poem">
+        <div class="poem-hidden" id="poem">
         </div>
       </main>
     <script src="src/index.js"></script>
