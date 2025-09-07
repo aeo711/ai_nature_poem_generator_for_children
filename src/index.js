@@ -12,9 +12,10 @@ function generatePoem(event) {
 
   let topicInput = document.querySelector("user-topic");
   let apiKey = "68a00b103e53ctc365f3574aeo9c2492";
-  let prompt = `Generate a poem about ${topicInput}`;
   let context =
-    "You are an expert at writing poems. Your mission is to generate a 4 line poem from user input '${topicInput}'. The subject of the poem will come from '${topicInput}' Please sign the bottom 'SheCodes AI'. Please use HTML to format the poem, example: <p></p>.";
+    "User instructions: You are an expert at writing poems for children. Your mission is to generate a 4 line poem for ages 4 through 12. Do not include a title. Please sign the bottom of the poem 'SheCodes AI' in bold. Please use HTML to format the poem, example: <p></p>. Make sure to follow the user instructions. ";
+  let prompt = `Generate a poem about ${topicInput}`;
+  let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let poemElement = document.querySelector("#poem");
   poemElement.classList.remove("hidden");
